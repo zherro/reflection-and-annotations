@@ -1,0 +1,48 @@
+package  br.com.zherro.codereusability.model;
+
+import br.com.zherro.codereusability.annotation.c1_getter_map.Ignorar;
+import br.com.zherro.codereusability.annotation.c1_getter_map.NomePropriedade;
+
+//	Classe	para	ser	utilizada	como	base
+public class Produto	{
+    private	String	nome;
+    private	String	categoria;
+    private	Double	preco;
+    private	String	descricao;
+    public	Produto(String	nome,	String	categoria,	Double	preco, String	descricao) {
+                    this.nome	=	nome;
+                    this.categoria	=	categoria;
+                    this.preco	=	preco;
+                    this.descricao	=	descricao;
+    }
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    @Ignorar
+    public String getCategoria() {
+        return categoria;
+    }
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+    public Double getPreco() {
+        return preco;
+    }
+    public void setPreco(Double preco) {
+        this.preco = preco;
+    }
+
+    @NomePropriedade("informacao")
+    public String getDescricao() {
+        return descricao;
+    }
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+    
+    
+}
