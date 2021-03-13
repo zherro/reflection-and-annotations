@@ -45,6 +45,6 @@ This tests uses a empty nethod in `reflection/c2_performance/ClasseTeste.java`
 
 For add performance to code we may use strategies how reusability of code and share between instances.
 
-In this test the code run up to 4x more fast in relation to code of example [1.1.Basic map getters](#1.1.basic_map_getters)
+In this test the code run up to 4x more fast in relation to code of example [1.1.Basic map getters](#11basic-map-getters)
 
 ## 2.Annotations
